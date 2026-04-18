@@ -2,7 +2,7 @@
 layout: home
 blog:
   name: 'Perseverance'
-  motto: 'P二severance の blog'
+  motto: 'Perseverance の blog'
   pageSize: 6
 ---
 
