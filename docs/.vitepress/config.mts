@@ -12,7 +12,7 @@ export default defineConfig({
   description: 'Perseverance 的 CTF 学习之路',
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: `${base}favicon.ico` }],
+    ['link', { rel: 'icon', href: `${base}avatar.jpg` }],
     ['meta', { name: 'theme-color', content: '#0f766e' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Perseverance' }],
