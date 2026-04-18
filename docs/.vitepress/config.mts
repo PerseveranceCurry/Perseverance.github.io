@@ -26,7 +26,7 @@ export default defineConfig({
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '相关文章',
     lastUpdatedText: '上次更新于',
-    logo: '/logo.svg',
+    logo: '/avatar.jpg',
     nav: [
       { text: '首页', link: '/' },
       { text: '关于', link: '/about' }

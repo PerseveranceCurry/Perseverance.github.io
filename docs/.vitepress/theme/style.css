@@ -253,10 +253,7 @@ html[theme].dark .VPDocAsideOutline .content {
 }
 
 .vp-doc img.blog-doc-cover.blog-doc-cover.blog-doc-cover {
-  margin-top: 0;
-  border: 1px solid #e2e8f0;
-  border-radius: 18px;
-  box-shadow: none;
+  display: none;
 }
 
 @media (max-width: 960px) {
