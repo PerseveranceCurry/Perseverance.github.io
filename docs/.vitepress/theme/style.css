@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --site-font-body: 'IBM Plex Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --site-font-display: 'Space Grotesk', 'IBM Plex Sans', 'PingFang SC', sans-serif;
+  --site-font-mono: 'JetBrains Mono', 'Cascadia Code', monospace;
+}
+
+html[theme] body {
+  font-family: var(--site-font-body);
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.18), transparent 30%),
+    linear-gradient(180deg, #f7faf9 0%, #eef6f5 45%, #f9fafb 100%);
+}
+
+html[theme].dark body {
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 24%),
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.15), transparent 28%),
+    linear-gradient(180deg, #08101a 0%, #0c1722 50%, #09131d 100%);
+}
+
+.VPNavBar {
+  background: rgba(255, 255, 255, 0.72) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(15, 118, 110, 0.12);
+}
+
+html[theme].dark .VPNavBar {
+  background: rgba(8, 16, 26, 0.78) !important;
+  border-bottom-color: rgba(45, 212, 191, 0.12);
+}
+
+.VPHome {
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHome::before,
+.VPHome::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  border-radius: 999px;
+  filter: blur(24px);
+}
+
+.VPHome::before {
+  width: 26rem;
+  height: 26rem;
+  top: 3rem;
+  right: -7rem;
+  background: rgba(45, 212, 191, 0.22);
+}
+
+.VPHome::after {
+  width: 22rem;
+  height: 22rem;
+  left: -6rem;
+  top: 22rem;
+  background: rgba(14, 165, 233, 0.18);
+}
+
+.VPHome .name,
+.VPHome .text,
+.VPHome .tagline,
+.home-intro-card h2 {
+  font-family: var(--site-font-display);
+}
+
+.VPHome .tagline {
+  max-width: 40rem;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.home-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+
+.home-intro-card {
+  position: relative;
+  padding: 1.2rem 1.15rem;
+  border: 1px solid rgba(15, 118, 110, 0.12);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(16px);
+}
+
+html[theme].dark .home-intro-card {
+  border-color: rgba(45, 212, 191, 0.12);
+  background: rgba(11, 18, 32, 0.7);
+  box-shadow: 0 24px 72px rgba(2, 6, 23, 0.4);
+}
+
+.home-intro-label {
+  display: inline-flex;
+  margin-bottom: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.1);
+  color: #0f766e;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+html[theme].dark .home-intro-label {
+  background: rgba(45, 212, 191, 0.12);
+  color: #7dd3fc;
+}
+
+.home-intro-card h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.15rem;
+}
+
+.home-intro-card p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.vp-doc code,
+.vp-code-group .tabs label,
+.vp-code {
+  font-family: var(--site-font-mono);
+}
+
+@media (max-width: 960px) {
+  .home-intro-grid {
+    grid-template-columns: 1fr;
+  }
+}
