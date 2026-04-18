@@ -1,16 +1,13 @@
 ---
 title: "哈尔滨工业大学（威海）第四届网络安全技术挑战赛 Writeup"
 date: 2026-04-10
-description: "哈尔滨工业大学（威海）第四届网络安全技术挑战赛复盘，整理 Web、Forensics 等题目的解题过程。"
+description: "哈尔滨工业大学（威海）第四届网络安全技术挑战赛复盘，rank1"
 top: 2
 sticky: 1
 cover: "/posts/hitwh-fourth-cybersecurity-writeup/%E6%8B%BC%E5%9B%BE.png"
 tag:
   - "CTF"
   - "Writeup"
-  - "Web"
-  - "Forensics"
-  - "Campus"
 ---
 
 ## [Web] **时光倒流**
