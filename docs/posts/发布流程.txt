@@ -1,0 +1,5 @@
+chcp 65001
+cd "C:\Users\perseverance\Documents\Codex\2026-04-18-github-io-https-perseverancecurry-github-io"
+git add .
+git commit -m "更新站点"
+git -c http.proxy=http://127.0.0.1:7897 push origin main

@@ -9,14 +9,14 @@ export default defineConfig({
   base,
   lang: 'zh-cn',
   title: 'Perseverance',
-  description: 'Perseverance 的 CTF / Web 安全博客，记录比赛复盘、脚本思路与漏洞利用过程。',
+  description: 'Perseverance 的 CTF 学习之路',
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', href: `${base}favicon.ico` }],
     ['meta', { name: 'theme-color', content: '#0f766e' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Perseverance' }],
-    ['meta', { property: 'og:description', content: '记录 CTF 比赛、Web 安全与取证复盘。' }]
+    ['meta', { property: 'og:description', content: '记录 CTF 比赛复盘。' }]
   ],
   themeConfig: {
     outline: {
