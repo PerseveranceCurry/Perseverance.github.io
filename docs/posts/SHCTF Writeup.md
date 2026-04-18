@@ -4,7 +4,6 @@ date: 2026-02-23
 description: "SHCTF 比赛复盘，rank2"
 top: 1
 sticky: 2
-cover: "/posts/shctf-writeup/cover.png"
 tag:
   - "CTF"
   - "Writeup"
